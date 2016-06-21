@@ -33,6 +33,7 @@ persist-tun
 push "dhcp-option DNS 8.8.8.8"
 push "dhcp-option DNS 8.8.4.4"
 
+topology subnet
 proto tcp-server
 port 443
 dev tun443
@@ -53,6 +54,7 @@ persist-tun
 push "dhcp-option DNS 8.8.8.8"
 push "dhcp-option DNS 8.8.4.4"
 
+topology subnet
 proto udp
 port 1194
 dev tun1194
@@ -71,6 +73,7 @@ client
 nobind
 dev tun
 redirect-gateway def1
+topology subnet
 
 <key>
 `cat key.pem`
